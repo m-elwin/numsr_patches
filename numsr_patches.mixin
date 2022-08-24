@@ -1,0 +1,8 @@
+{
+    "build": {
+             "create" : {
+                      "allow-overriding" : ["launch"],
+                      "packages-skip" : ["launch_pytest", "launch_testing", "launch_testing_ament_cmake", "launch_xml", "launch_yaml", "test_launch_testing"]
+             }
+    }
+}
