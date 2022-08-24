@@ -1,0 +1,16 @@
+#+TITLE: NU-MSR-WS
+#+AUTHOR: Matthew Elwin
+
+* Overview
+This package contains scripts and configuration files for unreleased or customized packages used by Northwestern University's MS in Robotics program.
+This repository is intended for use with ROS2 Humble on Ubuntu 22.04
+
+** How to use
+1. Make a new ROS2 workspace and enter it: =mkdir -p nuws/src && cd nuws=
+2. Clone the repositories: =vcs import --from-url https://github.com/nu_msr_ws.repos= src
+3. Build the workspace: =colcon build=
+4. The workspace can now be sourced and used.
+
+** Distributing
+1. In some circumstances, it is desirable to distribute binary versions of the packages
+2. This package contains a colcon extension =colcon debianize= that creates =.deb= files from the package
