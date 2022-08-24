@@ -5,10 +5,15 @@
 This package contains scripts and configuration files for unreleased or customized packages used by Northwestern University's MS in Robotics program.
 This repository is intended for use with ROS2 Humble on Ubuntu 22.04
 
+What this does
+1. Builds librealsense2 with python bindings (will be removed when librealsense2 is realeased for Ubuntu 22.04)
+2. Builds interbotix sdk ROS packages
+3. Builds an updated ros launch release (until some patches are released with the binary
+
 ** How to use
 1. Make a new ROS2 workspace and enter it: =mkdir -p nuws/src && cd nuws=
 2. Clone the repositories: =vcs import --from-url https://github.com/nu_msr_ws.repos= src
-3. Build the workspace: =colcon build=
+3. Build the workspace: =colcon build --mixin-files ./src/numsr_patches/numsr_patches.mixin --mixin numsr=
 4. The workspace can now be sourced and used.
 
 ** Distributing
