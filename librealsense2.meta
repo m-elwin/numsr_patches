@@ -1,0 +1,7 @@
+{
+    "names": {
+        "librealsense2": {
+            "cmake-args": ["-DCMAKE_BUILD_TYPE=Release", "-DBUILD_PYTHON_BINDINGS=ON", "-DPYTHON_INSTALL_DIR=./pythonlibs"]
+        }
+    }
+}
