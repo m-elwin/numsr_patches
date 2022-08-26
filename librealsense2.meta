@@ -1,0 +1,7 @@
+{
+    "names": {
+        "librealsense2": {
+            "cmake-args": ["-DCMAKE_BUILD_TYPE=Release", "-DBUILD_PYTHON_BINDINGS:bool=true"]
+        }
+    }
+}
