@@ -1,0 +1,25 @@
+repositories:
+  interbotix_ros_core:
+    type: git
+    url: https://github.com/Interbotix/interbotix_ros_core.git
+    version: 21e7ad24fc7d230bb9c4d87c4b35bd84ccc28f59
+  interbotix_ros_manipulators:
+    type: git
+    url: https://github.com/Interbotix/interbotix_ros_manipulators.git
+    version: b7f44644e920e7ec9fef98af55117a6daa33d289
+  interbotix_ros_toolboxes:
+    type: git
+    url: https://github.com/Interbotix/interbotix_ros_toolboxes
+    version: 4af5e8cec89e9984b7756d4dd632d11250dd69de
+  launch:
+    type: git
+    url: https://github.com/ros2/launch.git
+    version: edf68913560ebb127441aca513519b4f3a2559bd
+  librealsense:
+    type: git
+    url: https://github.com/m-elwin/librealsense.git
+    version: 06347cfedcdf5ce43ab84d9dcaa0b803123c8a1f
+  numsr_patches:
+    type: git
+    url: git@github.com:m-elwin/numsr_patches
+    version: a7fe1c2cedaf41295c3963997c92a41a9d499ee2
