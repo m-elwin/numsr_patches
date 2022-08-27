@@ -28,7 +28,7 @@ colcon mixin add numsr_patches file://$(pwd)/src/numsr_patches/index.yaml
 colcon mixin update numsr_patches
 
 # Build the workspace
-colcon build numsr
+colcon build --mixin numsr
 #+END_SRC
 
 *** Additional Options
