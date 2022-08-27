@@ -1,12 +1,4 @@
 repositories:
-  DynamixelSDK:
-    type: git
-    url: https://github.com/ROBOTIS-GIT/DynamixelSDK
-    version: 3.7.60
-  dynamixel-workbench:
-    type: git
-    url: https://github.com/ROBOTIS-GIT/dynamixel-workbench
-    version: a5568c26c89972128aa5570ea5f39d868859971f
   interbotix_ros_core:
     type: git
     url: https://github.com/interbotix/interbotix_ros_core
