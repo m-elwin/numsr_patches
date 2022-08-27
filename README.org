@@ -11,9 +11,9 @@ This repository is intended for use with ROS2 Humble on Ubuntu 22.04, and is des
 3. An updated =ros2 launch= with some not-yet-released bugfixes
 
 ** Setup
-Here are the basic setup instructions. Essentially this is a ros 2 workspace whose contents are populated with a =.repos= file using =vcs tool=
+Here are the basic setup instructions.
+Essentially this is a ros 2 workspace whose contents are populated with a =.repos= file using =vcs tool=
 #+BEGIN_SRC bash
-# Assumes ros2-humble is installed and sourced
 # Make a new ROS2 workspace and enter it
 mkdir -p nuws/src
 cd nuws
@@ -29,14 +29,11 @@ colcon mixin update numsr_patches
 
 # Build the workspace
 colcon build numsr
-
-# Source the workspace from .bashrc
-echo "source ~/nuws/install/setup.bash" >> ~/.bashrc
 #+END_SRC
 
 *** Additional Options
-1. If you don't want to add the mixin you can invoke it directly with  =colcon build --mixin-files ./src/numsr_patches/numsr_patches.mixin --mixin numsr=.
-2. You don't need to source the workspace in =.bashrc= as long as you remember to source it when needed
+1. If you don't want to add the mixin globally you can invoke it directly with
+   =colcon build --mixin-files ./src/numsr_patches/numsr_patches.mixin --mixin numsr=.
 
 ** Updating
 Here is how to update the workspace when changes are made to =numsr_patches=
