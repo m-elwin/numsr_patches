@@ -11,6 +11,10 @@ repositories:
     type: git
     url: https://github.com/Interbotix/interbotix_ros_toolboxes
     version: 4af5e8cec89e9984b7756d4dd632d11250dd69de
+  interbotix_xs_driver:
+    type: git
+    url: https://github.com/Interbotix/interbotix_xs_driver
+    version: ros2
   launch:
     type: git
     url: https://github.com/ros2/launch.git
@@ -21,5 +25,5 @@ repositories:
     version: pyinstall
   numsr_patches:
     type: git
-    url: https://github.com/m-elwin/numsr_patches.git
+    url: git@github.com:m-elwin/numsr_patches
     version: main
