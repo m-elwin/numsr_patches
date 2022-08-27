@@ -18,7 +18,7 @@ Essentially this is a ros 2 workspace whose contents are populated with a =.repo
 mkdir -p nuws/src
 cd nuws
 # Clone the repositories
-vcs import --from-url https://raw.githubusercontent.com/m-elwin/numsr_patches/main/numsr_patches.repos src
+vcs import --input https://raw.githubusercontent.com/m-elwin/numsr_patches/main/numsr_patches.repos src
 
 # Install dependencies
 rosdep install --from-paths src --ignore-src -r -y
