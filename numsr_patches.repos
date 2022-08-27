@@ -18,8 +18,8 @@ repositories:
   librealsense:
     type: git
     url: https://github.com/m-elwin/librealsense.git
-    version: 06347cfedcdf5ce43ab84d9dcaa0b803123c8a1f
+    version: pyinstall
   numsr_patches:
     type: git
     url: git@github.com:m-elwin/numsr_patches
-    version: a7fe1c2cedaf41295c3963997c92a41a9d499ee2
+    version: main
