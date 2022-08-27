@@ -1,7 +1,15 @@
 repositories:
+  DynamixelSDK:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/DynamixelSDK
+    version: 3.7.60
+  dynamixel-workbench:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/dynamixel-workbench
+    version: a5568c26c89972128aa5570ea5f39d868859971f
   interbotix_ros_core:
     type: git
-    url: https://github.com/Interbotix/interbotix_ros_core.git
+    url: https://github.com/interbotix/interbotix_ros_core
     version: 21e7ad24fc7d230bb9c4d87c4b35bd84ccc28f59
   interbotix_ros_manipulators:
     type: git
@@ -9,21 +17,21 @@ repositories:
     version: b7f44644e920e7ec9fef98af55117a6daa33d289
   interbotix_ros_toolboxes:
     type: git
-    url: https://github.com/Interbotix/interbotix_ros_toolboxes
-    version: 4af5e8cec89e9984b7756d4dd632d11250dd69de
+    url: https://github.com/m-elwin/interbotix_ros_toolboxes
+    version: humble
   interbotix_xs_driver:
     type: git
-    url: https://github.com/Interbotix/interbotix_xs_driver
-    version: ros2
+    url: https://github.com/Interbotix/interbotix_xs_driver.git
+    version: v0.3.1
   launch:
     type: git
     url: https://github.com/ros2/launch.git
-    version: edf68913560ebb127441aca513519b4f3a2559bd
+    version: 290be4621e302bfaef75758fbf7220f4596044ad
   librealsense:
     type: git
     url: https://github.com/m-elwin/librealsense.git
     version: pyinstall
   numsr_patches:
     type: git
-    url: git@github.com:m-elwin/numsr_patches
+    url: https://github.com/m-elwin/numsr_patches.git
     version: main
