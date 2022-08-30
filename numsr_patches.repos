@@ -13,7 +13,7 @@ repositories:
     version: b7f44644e920e7ec9fef98af55117a6daa33d289
   interbotix_ros_toolboxes:
     type: git
-    url: git@github.com:m-elwin/interbotix_ros_toolboxes
+    url: https://github.com/m-elwin/interbotix_ros_toolboxes
     version: humble
   interbotix_xs_driver:
     type: git
