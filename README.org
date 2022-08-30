@@ -22,6 +22,7 @@ Essentially this is a ros 2 workspace whose contents are populated with a =.repo
 # Make a new ROS2 workspace and enter it
 mkdir -p nuws/src
 cd nuws
+
 # Clone the repositories
 vcs import --input https://raw.githubusercontent.com/m-elwin/numsr_patches/main/numsr_patches.repos src
 
@@ -34,6 +35,10 @@ colcon mixin update numsr_patches
 
 # Build the workspace
 colcon build --mixin numsr
+
+# Install the udev rules
+sudo cp src/librealsense/config/99-realsense-libusb.rules /etc/udev/rules.d
+sudo cp src/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/99-interbotix-udev.rules /etc/udev/rules.d
 #+END_SRC
 
 *** Additional Options
