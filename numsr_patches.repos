@@ -27,3 +27,7 @@ repositories:
     type: git
     url: https://github.com/m-elwin/librealsense.git
     version: pyinstall
+  numsr_patches:
+    type: git
+    url: https://github.com/m-elwin/numsr_patches.git
+    version: main
