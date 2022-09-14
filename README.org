@@ -20,8 +20,8 @@ Here are the basic setup instructions.
 Essentially this is a ros 2 workspace whose contents are populated with a =.repos= file using =vcs tool=
 #+BEGIN_SRC bash
 # Make a new ROS2 workspace and enter it
-mkdir -p nuws/src
-cd nuws
+mkdir -p ~/ws/nuws/src
+cd ~/ws/nuws
 
 # Clone the repositories
 vcs import --input https://raw.githubusercontent.com/m-elwin/numsr_patches/main/numsr_patches.repos src
@@ -41,12 +41,17 @@ sudo cp src/librealsense/config/99-realsense-libusb.rules /etc/udev/rules.d
 sudo cp src/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/99-interbotix-udev.rules /etc/udev/rules.d
 #+END_SRC
 
+In your =~/.bashrc=, after sourcing =/opt/ros/humble/setup.bash=, source the setup script for the =nuws=
+- The line is =source ~/ws/nuws/install/setup.bash=, adjusting the path to =nuws= as appropriate
 *** Additional Options
 1. If you don't want to add the mixin globally you can invoke it directly with
    =colcon build --mixin-files ./src/numsr_patches/numsr_patches.mixin --mixin numsr=.
 
 ** Updating
-Here is how to update the workspace when changes are made to =numsr_patches=
+1. These steps are only needed if you need to update to the latest version.
+2. If you just installed this, you are already at the latest version.
+
+Here is how to update the workspace when changes are made to =numsr_patches=. 
 #+BEGIN_SRC bash
 # Enter the nuws workspace
 cd ~/nuws
