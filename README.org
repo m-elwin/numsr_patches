@@ -15,6 +15,7 @@ The following prerequisites can be installed via =apt=, but are likely already i
 1. =python3-vcstool=
 2. =python3-colcon-common-extensions=
 3. =python3-colcon-mixin=
+
 ** Setup
 Here are the basic setup instructions.
 Essentially this is a ros 2 workspace whose contents are populated with a =.repos= file using =vcs tool=
@@ -24,10 +25,13 @@ mkdir -p ~/ws/nuws/src
 cd ~/ws/nuws
 
 # Clone the repositories
-vcs import --input https://raw.githubusercontent.com/m-elwin/numsr_patches/main/numsr_patches.repos src
+vcs import --recursive --input https://raw.githubusercontent.com/m-elwin/numsr_patches/main/numsr_patches.repos src
 
 # Install dependencies
 rosdep install --from-paths src --ignore-src -r -y
+
+# Install non rosdep depencencies
+sudo apt install libpoco-dev
 
 # Add the numsr colcon mixin
 colcon mixin add numsr_patches file://$(pwd)/src/numsr_patches/index.yaml
