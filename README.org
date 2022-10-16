@@ -51,13 +51,13 @@ Here is how to update the workspace when changes are made to =numsr_patches=
 # Enter the nuws workspace
 cd ~/nuws
 # update the repositories
-vcs import --force --from-url https://raw.githubusercontent.com/m-elwin/numsr_patches/main/numsr_patches.repos src
+vcs import --recursive --force --from-url https://raw.githubusercontent.com/m-elwin/numsr_patches/main/numsr_patches.repos src
 # update the mixin
-colcon mixin update numsr_patches
+colcon mixin update
 # Delete the installed files
-rm -rf install
+rm -rf install build log
 # rebuild the workspace
-colcon build numsr
+colcon build --mixin numsr
 #+END_SRC
 
 *** colcon-clean TODO
