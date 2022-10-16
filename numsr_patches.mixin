@@ -4,7 +4,7 @@
                       "merge-install" : [""],
                       "allow-overriding" : ["launch"],
                       "packages-skip" : ["launch_pytest", "launch_testing", "launch_testing_ament_cmake", "launch_xml", "launch_yaml", "test_launch_testing"],
-                      "metas" : ["src/numsr_patches/librealsense2.meta"]
+                      "metas" : ["src/numsr_patches/librealsense2.meta", "src/numsr_patches/libfranka.meta"]
              }
     }
 }

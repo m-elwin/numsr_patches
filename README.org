@@ -24,7 +24,7 @@ mkdir -p nuws/src
 cd nuws
 
 # Clone the repositories
-vcs import --input https://raw.githubusercontent.com/m-elwin/numsr_patches/main/numsr_patches.repos src
+vcs import --recursive --input https://raw.githubusercontent.com/m-elwin/numsr_patches/main/numsr_patches.repos src
 
 # Install dependencies
 rosdep install --from-paths src --ignore-src -r -y
