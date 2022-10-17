@@ -27,7 +27,7 @@ cd nuws
 vcs import --recursive --input https://raw.githubusercontent.com/m-elwin/numsr_patches/main/numsr_patches.repos src
 
 # Install dependencies
-rosdep install --from-paths src --ignore-src -r -y
+rosdep install --from-paths src -r -y
 
 # Add the numsr colcon mixin
 colcon mixin add numsr_patches file://$(pwd)/src/numsr_patches/index.yaml

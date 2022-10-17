@@ -8,6 +8,7 @@
   <license>MIT</license>
 
   <build_depend>librealsense2</build_depend>
+  <depend>moveit</depend>
   <export>
     <build_type>cmake</build_type>
   </export>
