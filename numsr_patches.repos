@@ -1,8 +1,4 @@
 repositories:
-  dynamixel-workbench:
-    type: git
-    url: https://github.com/ROBOTIS-GIT/dynamixel-workbench
-    version: a5568c26c89972128aa5570ea5f39d868859971f
   franka_ros2:
     type: git
     url: https://github.com/m-elwin/franka_ros2
