@@ -3,7 +3,23 @@
              "numsr" : {
                       "merge-install" : [""],
                       "allow-overriding" : ["launch"],
-                      "packages-skip" : ["launch_pytest", "launch_testing", "launch_testing_ament_cmake", "launch_xml", "launch_yaml", "test_launch_testing"],
+                      "packages-skip" : ["launch_pytest",
+                                         "launch_testing",
+                                         "launch_testing_ament_cmake",
+                                         "launch_xml",
+                                         "launch_yaml",
+                                         "test_launch_testing",
+                                         "moveit_commander",
+                                         "moveit_common",
+                                         "moveit_config_utils",
+                                         "moveit_core",
+                                         "moveit_experimental",
+                                         "moveit_kinematics",
+                                         "moveit_planners",
+                                         "moveit_plugins",
+                                         "moveit_ros",
+                                         "moveit_runtime",
+                                         "moveit_setup_assistant"],
                       "metas" : ["src/numsr_patches/librealsense2.meta", "src/numsr_patches/libfranka.meta"]
              }
     }
