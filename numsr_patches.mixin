@@ -3,7 +3,7 @@
              "numsr" : {
                       "merge-install" : [""],
                       "allow-overriding" : ["launch"],
-                      "packages-skip" : ["launch_pytest",
+                      "packages-ignore" : ["launch_pytest",
                                          "launch_testing",
                                          "launch_testing_ament_cmake",
                                          "launch_xml",
@@ -16,6 +16,10 @@
                                          "moveit_planners",
                                          "moveit_planners_ompl",
                                          "moveit_plugins",
+                                         "moveit_resources_prbt_support",
+                                         "moveit_resources_prbt_moveit_config",
+                                         "moveit_resources_prbt_pg70_support",
+                                         "moveit_resources_prbt_ikfast_manipulator_plugin",
                                          "moveit_ros",
                                          "moveit_ros_benchmarks",
                                          "moveit_ros_occupancy_map_monitor",
@@ -33,8 +37,11 @@
                                          "moveit_setup_srdf_plugins",
                                          "moveit_simple_controller_manager",
                                          "moveit_ros_visualization",
-                                         "pilz_industrial_motion_planner"],
+                                         "pilz_industrial_motion_planner",
+                                         "pilz_industrial_motion_planner_testutils"
+                                         ],
                       "metas" : ["src/numsr_patches/librealsense2.meta", "src/numsr_patches/libfranka.meta"]
              }
     }
 }
+ 
