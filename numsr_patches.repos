@@ -35,3 +35,19 @@ repositories:
     type: git
     url: https://github.com/m-elwin/numsr_patches.git
     version: main
+  moveit2_tutorials:
+    type: git
+    url: https://github.com/ros-planning/moveit2_tutorials
+    version: 70f5b293162d54ab080112f376dc871b8eaf9597
+  moveit_task_constructor:
+    type: git
+    url: https://github.com/ros-planning/moveit_task_constructor
+    version: 1e65027b26744dccd02bd7d7ac4d0856916cfde5
+  rosparam_shortcuts:
+    type: git
+    url: https://github.com/PickNikRobotics/rosparam_shortcuts
+    version: 0.5.0
+  warehouse_ros_mongo:
+    type: git
+    url: https://github.com/ros-planning/warehouse_ros_mongo
+    version: 7f6a901eef21225141a2d68c82f3d2ec8373bcab
