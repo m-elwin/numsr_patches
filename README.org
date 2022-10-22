@@ -5,17 +5,18 @@
 This package contains scripts and configuration files for unreleased or customized packages used by Northwestern University's MS in Robotics program.
 This repository is intended for use with ROS2 Humble on Ubuntu 22.04, and is designed to be an overlay of the standard ROS 2 installation.
 
-** Packages Provided
+* Packages Provided
 1. Librealsense2, with Python bindings
 2. interbotix ROS packages for using the PincherX 100 Robot arm
 3. An updated =ros2 launch= with some not-yet-released bugfixes
 
-** Prerequisites
+* Prerequisites
 The following prerequisites can be installed via =apt=, but are likely already installed if you are developing with ROS 2.
 1. =python3-vcstool=
 2. =python3-colcon-common-extensions=
 3. =python3-colcon-mixin=
-** Setup
+4. Modern Robotics Library (Install via pip)
+* Setup
 Here are the basic setup instructions.
 Essentially this is a ros 2 workspace whose contents are populated with a =.repos= file using =vcs tool=
 #+BEGIN_SRC bash
@@ -44,22 +45,3 @@ sudo cp src/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/99-inte
 *** Additional Options
 1. If you don't want to add the mixin globally you can invoke it directly with
    =colcon build --mixin-files ./src/numsr_patches/numsr_patches.mixin --mixin numsr=.
-
-** Updating
-Here is how to update the workspace when changes are made to =numsr_patches=
-#+BEGIN_SRC bash
-# Enter the nuws workspace
-cd ~/nuws
-# update the repositories
-vcs import --recursive --force --from-url https://raw.githubusercontent.com/m-elwin/numsr_patches/main/numsr_patches.repos src
-# update the mixin
-colcon mixin update
-# Delete the installed files
-rm -rf install build log
-# rebuild the workspace
-colcon build --mixin numsr
-#+END_SRC
-
-*** colcon-clean TODO
-When [[https://github.com/ruffsl/colcon-clean][colcon-clean]] is officially released it will be worked into the update process.
-- Monitor [[https://github.com/colcon/colcon-core/issues/521][Colcon-core Issue #521]] and [[https://github.com/colcon/colcon-core/issues/522][Colcon-core Issue #522]]
