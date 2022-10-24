@@ -31,10 +31,6 @@ repositories:
     type: git
     url: https://github.com/m-elwin/numsr_patches.git
     version: main
-  moveit2_tutorials:
-    type: git
-    url: https://github.com/ros-planning/moveit2_tutorials
-    version: 70f5b293162d54ab080112f376dc871b8eaf9597
   moveit_task_constructor:
     type: git
     url: https://github.com/ros-planning/moveit_task_constructor
