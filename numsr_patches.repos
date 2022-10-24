@@ -27,10 +27,6 @@ repositories:
     type: git
     url: https://github.com/m-elwin/librealsense.git
     version: pyinstall
-  moveit2:
-    type: git
-    url: https://github.com/peterdavidfagan/moveit2
-    version: 88a046b28f41b0b6b429eaa2d5b20e04265d6fd8
   numsr_patches:
     type: git
     url: https://github.com/m-elwin/numsr_patches.git
