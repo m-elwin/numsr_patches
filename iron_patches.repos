@@ -9,5 +9,5 @@ repositories:
     version: f3b8d775a9c847cab32684c8a316f67867761674
   numsr_patches:
     type: git
-    url: https://github.com:m-elwin/numsr_patches.git
+    url: https://github.com/m-elwin/numsr_patches.git
     version: iron_patches
