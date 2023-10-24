@@ -1,0 +1,13 @@
+repositories:
+  franka_ros2:
+    type: git
+    url: git@github.com:m-elwin/franka_ros2
+    version: iron_patches
+  libfranka:
+    type: git
+    url: https://github.com/frankaemika/libfranka
+    version: f3b8d775a9c847cab32684c8a316f67867761674
+  numsr_patches:
+    type: git
+    url: git@github.com:m-elwin/numsr_patches
+    version: iron_patches
